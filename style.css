@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Madimi+One&family=Oswald:wght@200..700&display=swap');
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#container {
+
+height: 100vh;
+width: 100vw;
+display: flex;
+}
+#right{
+  
+    height: 100vh;
+    width: 40vw;
+    position: relative;
+    background-color: white;
+
+}
+#right #nav {
+    display: flex;
+    justify-content: space-between;
+  padding: 30px 20px;
+  font-size: 30px;
+}
+#right #nav a{
+    text-decoration: none;
+    color:  black;
+    font-weight: 900;
+    border-bottom: 1px solid black;
+    padding:5px ;
+}
+#right #nav i{
+    color: royalblue;
+}
+#right #textcenter{
+   
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    transform: translate(-50% -50%)
+    
+
+}
+#textcenter h1{
+    font-size: 90px;
+    font-weight: 900;
+    font-family: "Madimi One", sans-serif;
+
+}
+#textcenter p{
+    opacity: .6;
+    font-size: 15pz;
+    /* line-height:12px; */
+    line-height: 20px;
+     margin-top: 20px;
+     margin-bottom: 30px;
+}
+#textcenter a{
+     font-size: 20px;
+     color: black;
+     text-decoration: none;
+     font-family: "Madimi One", sans-serif;
+     opacity: .7;
+     border-bottom: 1px solid black;
+     padding-bottom: 5px;
+     font-weight: 600;
+}
+    
+
+
+#left{
+    background-color: orange;
+    height: 100vh;
+    width: 60vw;
+}
+#lefttop{
+    height: 50vh;
+    width: 60vw;
+    background-color: pink;
+    display: flex;
+
+}
+#ltright{
+    height: 50vh;
+    width: 30vw;
+    background-color: royalblue;
+    background-image: url("1.jpg");
+    background-size: cover;
+    background-position: center;
+
+
+}
+#ltleft{
+    height: 50vh;
+    width: 30vw;
+    background-color: green;
+    background-image: url("2.jpg");
+    background-size: cover;
+    background-position: bottom;
+}
+#leftbottom{
+    height: 50vh;
+    width: 60vw;
+    background-color:pink;
+    background-image: url("5.jpg");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+}
+
+
+@media only screen and (max-width:500px){
+    #container{
+        flex-direction: columns;
+        
+    }
+    #container #right{
+        width: 100vw;
+    
+    }
+    #container #left{
+        width: 100vw;
+    }
+    
+}
+
+
